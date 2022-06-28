@@ -1,0 +1,116 @@
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="style.css" />
+		<title>Project IMK</title>
+	</head>
+	<body class="bg-color">
+		<!-- Navbar -->
+		<nav class="navbar">
+			<div>
+				<a href="index.html">
+					<img src="assets/image 9.png" id="logo" />
+				</a>
+			</div>
+			<div>
+				<a href="index.html" class="teks nav-active" style="left: 200px; font-size: 18px; margin: 10px; top: 38px">Home</a>
+			</div>
+			<div>
+				<a href="#" class="teks nav-inactive" style="left: 310px; top: 33px; font-size: 18px; margin: 10px"> Categories </a>
+			</div>
+			<div>
+				<a href="#" class="teks nav-inactive" style="left: 470px; top: 33px; font-size: 18px; margin: 10px"> Rewards </a>
+			</div>
+			<div>
+				<a href="register.html" class="teks nav-inactive" style="width: 113px; height: 36px; right: 180px; top: 41px; font-size: 18px"> Sign Up </a>
+			</div>
+			<div>
+				<a href="login.html">
+					<button class="btn-home-login">
+						<div class="teks teks-home-login">Sign In</div>
+					</button>
+				</a>
+			</div>
+		</nav>
+		<!-- End Navbar -->
+
+		<!-- Content -->
+		<div>
+			<h1 class="teks" id="welcome">WELCOME TO OUR STORE</h1>
+			<h2 class="teks" id="desc">We have clothes and more what you need</h2>
+			<img src="assets/image 2.png" id="img-product-bg" />
+			<form>
+				<input type="text" name="keyword" placeholder="Sukajan Jacket" style="padding-top: 19px" class="teks search" />
+				<button type="submit">
+					<img src="assets/icons8-search-96 1.png" class="btn-search" />
+				</button>
+			</form>
+			<div>
+				<button id="btn-rating" data-modal-target="#modal">
+					<div class="teks teks-rating">Feedback</div>
+				</button>
+			</div>
+			<div>
+				<img src="assets/Group 1.png" id="decor-garis" />
+				<img src="assets/rush-99 1.png" id="decor-titik" />
+			</div>
+			<div class="modal" id="modal">
+				<div class="modal-header">
+					<div class="teks" id="teks-modal">Enjoy? Rate Us</div>
+					<button data-close-button class="close-button">
+						<img src="assets/icons8-close-96.png" alt="" id="img-close" />
+					</button>
+				</div>
+				<div class="modal-body">
+					<img src="assets/Group 14.png" alt="" id="star-rate" />
+				</div>
+			</div>
+			<div id="overlay"></div>
+		</div>
+		<!-- End Content -->
+	</body>
+
+	<script>
+		const openModalButtons = document.querySelectorAll("[data-modal-target]");
+		const closeModalButtons = document.querySelectorAll("[data-close-button]");
+		const overlay = document.getElementById("overlay");
+		const hideBtn = document.getElementById("btn-rating");
+
+		openModalButtons.forEach((button) => {
+			button.addEventListener("click", () => {
+				const modal = document.querySelector(button.dataset.modalTarget);
+				openModal(modal);
+			});
+		});
+
+		overlay.addEventListener("click", () => {
+			const modals = document.querySelectorAll(".modal.active");
+			modals.forEach((modal) => {
+				closeModal(modal);
+			});
+		});
+
+		closeModalButtons.forEach((button) => {
+			button.addEventListener("click", () => {
+				const modal = button.closest(".modal");
+				closeModal(modal);
+			});
+		});
+
+		function openModal(modal) {
+			if (modal == null) return;
+			modal.classList.add("active");
+			overlay.classList.add("active");
+			hideBtn.classList.add("active");
+		}
+
+		function closeModal(modal) {
+			if (modal == null) return;
+			modal.classList.remove("active");
+			overlay.classList.remove("active");
+			hideBtn.classList.remove("active");
+		}
+	</script>
+</html>

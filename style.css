@@ -1,0 +1,475 @@
+.bg-color {
+	background-color: #e2e3e3;
+}
+
+.teks {
+	font-family: Mulish;
+	font-style: normal;
+	font-weight: bold;
+}
+
+.nav-active {
+	position: absolute;
+	width: 110px;
+	height: 35px;
+	left: 220px;
+	top: 34px;
+	color: #2461ff;
+	text-decoration: none;
+}
+
+.nav-inactive {
+	position: absolute;
+	width: 162px;
+	height: 35px;
+	line-height: 35px;
+	color: #525252;
+	text-decoration: none;
+	transition: 300ms;
+}
+
+.nav-inactive:hover {
+	color: #2461ff;
+}
+
+.navbar {
+	position: fixed;
+	width: 100%;
+	height: 105px;
+	left: 0px;
+	top: -15px;
+	background: #ffffff;
+	box-shadow: 0px -4px 50px rgba(0, 0, 0, 0.25);
+	border-radius: 0px 0px 35px 35px;
+}
+
+.btn-home-login {
+	position: absolute;
+	width: 84px;
+	height: 40px;
+	right: 100px;
+	top: 40px;
+	background: #2461ff;
+	border-radius: 15px;
+	border: none;
+	transition: 300ms;
+}
+
+.btn-home-login:hover {
+	box-shadow: 0px 0px 15px 1px rgba(0, 0, 0, 0.3);
+}
+
+.teks-home-login {
+	position: absolute;
+	width: 107px;
+	height: 40px;
+	right: 100px;
+	left: -11px;
+	top: 0px;
+	font-size: 18px;
+	line-height: 39px;
+	color: #ffffff;
+}
+
+#logo {
+	position: absolute;
+	width: 60px;
+	height: 60px;
+	left: 100px;
+	top: 25px;
+}
+
+#welcome {
+	position: absolute;
+	width: 677px;
+	height: 267px;
+	left: 434px;
+	top: 130px;
+	font-weight: 800;
+	font-size: 73px;
+	line-height: 95px;
+	text-align: center;
+	color: #2461ff;
+}
+
+#desc {
+	position: absolute;
+	width: 355px;
+	height: 84px;
+	left: 610px;
+	top: 370px;
+	font-size: 25px;
+	line-height: 35px;
+	text-align: center;
+	color: #525252;
+}
+
+#img-product-bg {
+	position: absolute;
+	left: 750px;
+	top: 520px;
+
+	background: linear-gradient(270.23deg, rgba(255, 255, 255, 0) 9.87%, rgba(246, 246, 246, 0.2) 71.17%), linear-gradient(0deg, rgba(255, 255, 255, 0.7) 15.55%, rgba(255, 255, 255, 0) 69.95%), url(.png);
+	border-radius: 32px 32px 0px 0px;
+}
+
+.search {
+	position: absolute;
+	width: 532.73px;
+	height: 51.36px;
+	left: 518px;
+	top: 500px;
+	background: #ffffff;
+	border-radius: 20px;
+	border: none;
+	padding: 20px;
+	font-size: 25px;
+	transition: 300ms;
+}
+
+.search::-webkit-input-placeholder {
+	font-size: 21px;
+	color: #919191;
+	top: -5px;
+}
+
+.search:focus {
+	color: #0e0b36;
+	padding-bottom: 20px;
+	outline: none;
+	font-size: 21px;
+	box-shadow: 0px 0px 19px 7px rgba(0, 0, 0, 0.15);
+}
+
+.btn-search {
+	position: absolute;
+	width: 35px;
+	height: 35px;
+	left: 985px;
+	top: 508px;
+}
+
+#btn-rating {
+	position: fixed;
+	width: 57px;
+	height: 175px;
+	left: 96.4%;
+	top: 293px;
+	padding: 0;
+	border: 0;
+	background: #2461ff;
+	border-radius: 21px 0px 0px 21px;
+	transition: 300ms ease-in-out;
+}
+
+#btn-rating:hover {
+	box-shadow: 0px 0px 25px 1px rgba(0, 0, 0, 0.4);
+}
+
+#btn-rating.active {
+	left: 200%;
+}
+
+.teks-rating {
+	position: absolute;
+	right: -30px;
+	top: 69px;
+	font-size: 25px;
+	line-height: 38px;
+	color: #ffffff;
+	transform: rotate(-90deg);
+}
+
+#decor-garis {
+	position: absolute;
+	left: 0px;
+	top: 250px;
+}
+
+#decor-titik {
+	position: absolute;
+	left: 100px;
+	top: 515px;
+}
+
+#welcome-register {
+	position: absolute;
+	width: 380px;
+	height: 84px;
+	left: 601px;
+	top: 107px;
+	font-family: Mulish;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 33px;
+	color: #0c0d36;
+}
+
+.form-register {
+	position: absolute;
+	width: 380px;
+	height: 40px;
+	left: 601px;
+	background: #f3f3f3;
+	box-sizing: border-box;
+	border-radius: 8px;
+	font-weight: normal;
+	border: none;
+	padding: 5px;
+	font-size: 18px;
+}
+
+.form-register::-webkit-input-placeholder {
+	padding: 3px;
+	font-size: 18px;
+}
+
+.form-register:focus,
+.form-register:hover {
+	outline: 2px solid #2461ff;
+}
+
+.judul-input {
+	position: absolute;
+	font-family: Poppins;
+	font-style: normal;
+	font-weight: normal;
+	left: 601px;
+	font-size: 15px;
+}
+
+.btn-submit-register {
+	position: absolute;
+	width: 380px;
+	height: 40px;
+	left: 601px;
+	background: #2461ff;
+	border: none;
+	border-radius: 8px;
+	transition: 300ms;
+}
+
+.btn-submit-register:hover {
+	background: #ffffff;
+	outline: 2px solid #2461ff;
+}
+
+.teks-register {
+	font-weight: bold;
+	color: #ffffff;
+	font-size: 18px;
+	padding-bottom: 5px;
+}
+
+.teks-register:hover {
+	color: #2461ff;
+}
+
+.btn-to-login {
+	position: absolute;
+	width: 380px;
+	height: 40px;
+	left: 601px;
+	background: #f3f3f3;
+	border: none;
+	border-radius: 8px;
+	transition: 300ms;
+}
+
+.btn-to-login:hover {
+	outline: 2px solid #2461ff;
+}
+
+.teks-to-login {
+	font-weight: normal;
+	color: #bbbbbb;
+	font-size: 18px;
+	padding-bottom: 5px;
+}
+
+.teks-to-login:hover {
+	color: #2461ff;
+}
+
+#pic-login {
+	position: absolute;
+	width: 320px;
+	height: 420px;
+	left: 350px;
+	top: 195px;
+}
+
+#welcome-login {
+	position: absolute;
+	width: 371px;
+	height: 84px;
+	left: 800px;
+	top: 166px;
+	font-family: Mulish;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 30px;
+}
+
+.form-login {
+	position: absolute;
+	width: 300px;
+	height: 40px;
+	left: 800px;
+	background: #f3f3f3;
+	box-sizing: border-box;
+	border-radius: 8px;
+	font-weight: normal;
+	border: none;
+	padding: 5px;
+	font-size: 18px;
+}
+
+.form-login::-webkit-input-placeholder {
+	padding: 3px;
+	font-size: 18px;
+}
+
+.form-login:focus,
+.form-login:hover {
+	outline: 2px solid #2461ff;
+}
+
+.judul-input-login {
+	position: absolute;
+	font-family: Poppins;
+	font-style: normal;
+	font-weight: normal;
+	left: 800px;
+	font-size: 15px;
+}
+
+#forgot-pass {
+	position: absolute;
+	font-family: Poppins;
+	font-style: normal;
+	font-weight: normal;
+	top: 460px;
+	left: 888px;
+	font-size: 13px;
+	text-decoration: none;
+	color: #58576d;
+}
+
+.btn-submit-login {
+	position: absolute;
+	width: 380px;
+	height: 40px;
+	left: 800px;
+	background: #2461ff;
+	border: none;
+	border-radius: 8px;
+	transition: 300ms;
+}
+
+.btn-submit-login:hover {
+	background: #ffffff;
+	outline: 2px solid #2461ff;
+}
+
+.btn-to-register {
+	position: absolute;
+	width: 380px;
+	height: 40px;
+	left: 800px;
+	background: #f3f3f3;
+	border: none;
+	border-radius: 8px;
+	transition: 300ms;
+}
+
+.btn-to-register:hover {
+	outline: 2px solid #2461ff;
+}
+
+#img-close {
+	width: 30px;
+	height: 30px;
+}
+
+#teks-modal {
+	font-weight: normal;
+	padding: 0px 15px;
+	font-size: 24px;
+	width: 70%;
+	height: 100%;
+	left: 27px;
+	position: relative;
+}
+
+#star-rate {
+	padding-bottom: 15px;
+	position: relative;
+	display: flex;
+	left: 36px;
+}
+
+.modal {
+	position: fixed;
+	top: 50%;
+	left: 140%;
+	transform: translate(-50%, -50%);
+	transition: 200ms ease-in-out;
+	border: 3px solid #2461ff;
+	box-shadow: 0px 0px 35px 6px rgba(0, 0, 0, 0.15);
+	border-radius: 13px;
+	z-index: 10;
+	background-color: white;
+	width: 280px;
+	max-width: 80%;
+}
+
+.modal.active {
+	transform: translate(-50%, -50%);
+	left: 89%;
+}
+
+.modal-header {
+	padding: 10px 15px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.modal-header .title {
+	font-size: 1.25rem;
+	font-weight: bold;
+}
+
+.modal-header .close-button {
+	cursor: pointer;
+	border: none;
+	outline: none;
+	background: none;
+	font-size: 1.25rem;
+	font-weight: bold;
+}
+
+.modal-body {
+	padding: 10px 15px;
+}
+
+#overlay {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	pointer-events: none;
+}
+
+#overlay.active {
+	opacity: 1;
+	pointer-events: all;
+}
+
+.close-button {
+	position: relative;
+	top: -28px;
+	left: 15px;
+}
